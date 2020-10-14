@@ -1,5 +1,70 @@
+/* 
+ALL 
+*/
+
 * {
     font-family: ‘Raleway’, sans-serif;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+/* 
+#HERO 
+*/
+
+#hero {
+    height: 100vh;
+    background: url('images/gradient.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: fixed;
+}
+
+#hero h1, #hero p {
+    color: white;
+}
+
+#hero span:nth-of-type(1) {
+    color: #E31A6D;
+}
+
+.hero-pad {
+    padding-top: 200px;
+}
+
+/* 
+#NAV
+ */
+
+header {
+    background: #1B252F;
+}
+
+#logo {
+    width: 100px;
+}
+
+#nav i {
+    color: fff;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.no-bullet ul {
+    padding-left: 0;
+}
+
+.no-bullet li {
+    list-style-type: none;
+    padding: 1em;
+    /* padding-left: 0; */
 }
 
 .card-image {
@@ -7,6 +72,31 @@
     height: auto;
 }
 
-i {
-    color: #333;
-}
+/* 
+#ABOUT
+ */
+
+
+ /* 
+#PORTFOLIO
+ */
+
+
+
+ /* 
+#BLOG
+ */
+
+
+
+ /* 
+#CONTACT
+ */
+
+
+
+
+
+ /* 
+#FOOTER
+ */
