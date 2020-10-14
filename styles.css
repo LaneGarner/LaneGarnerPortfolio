@@ -1,0 +1,12 @@
+* {
+    font-family: ‘Raleway’, sans-serif;
+}
+
+.card-image {
+    width: 300px;
+    height: auto;
+}
+
+i {
+    color: #333;
+}
