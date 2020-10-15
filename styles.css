@@ -19,7 +19,8 @@ body {
 #hero {
     height: 110vh;
     width: 100vw;
-    background: #555;
+    background: rgb(51,51,51);
+    background: linear-gradient(344deg, rgba(51,51,51,1) 0%, rgba(85,85,85,1) 24%, rgba(136,136,136,1) 100%);
     /* background: url('images/gradient.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -60,12 +61,10 @@ header {
     height: 5em;
     width: 100vw;
     /* background: #1B252F; */
-}
-
-#nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 header a {
@@ -73,6 +72,8 @@ header a {
     text-decoration: none;
     font-size: 1em;
     padding: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .no-bullet ul {
@@ -95,7 +96,7 @@ header a {
 #ABOUT
  */
 #about {
-     padding-top: 50px;
+     padding-top: 20px;
 }
 
 #aboutMe {
@@ -109,8 +110,8 @@ header a {
 #about h1 {
     font-size: 49px;
     font-weight: 900;
-    margin: 120px auto 0 auto;
-    padding-top: 50px;
+    margin: 0px auto 0 auto;
+    padding-top: 20px;
     padding-bottom: 0;
     padding-left: 1px;
     /* border-top: dashed 3px #333; */
@@ -147,7 +148,11 @@ header a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.card figcaption {
+    padding-top: 10px;
 }
 
 .card h2 {
@@ -198,8 +203,17 @@ header a {
 } */
 
 #portfolio h1 {
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 49px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: solid 3px #F5F5F5;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
  /* 
