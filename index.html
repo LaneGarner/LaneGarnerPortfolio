@@ -13,22 +13,21 @@
 <body>
     <!-- <canvas> -->
     <section id="hero">
-        <span class="hero-pad">{ }</span>
-        <h1>Hello, I’m <span>Lane Garner</span>.</h1>
-        <p>I’m studying to become a fullstack web developer.</p>
+        <span id="curly">{ }</span>
+        <h1>Hello, I’m <span> Lane Garner</span> .</h1>
+        <p>I’m studying to become a fullstack web developer.<br> Scroll down to see some of my work.</p>
         <button><i class="fas fa-code"></i> Learn with me</button>
-    <!-- </canvas> -->
     </section>
+    <!-- </canvas> -->
     <header>
         <div">
-            <img id="logo" src="images/logo.svg" alt="Lane Garner Web Dev Logo">
-        </div>  
-        <div>
-            <i class="fas fa-angle-down"></i>
-            <i class="fas fa-angle-double-down"></i>        
+            <!-- <img id="logo" src="images/logo.svg" alt="Lane Garner Web Dev Logo"> -->
+        </div>
+        <div id="veggie-burger">
+            <i id="veggie-closed" class="fas fa-angle-down"></i>
+            <i id="veggie-open" class="fas fa-angle-double-down"></i>        
         </div>
         <nav id="nav">
-            <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#blog">Blog</a>
@@ -37,124 +36,154 @@
     </header>
     <main>
         <section id="about">
-            <h1>About</h1>
-            <section>
-                <div>
-                    <h2>Creative</h2>
-                    <i class="fas fa-guitar"></i>
-                    <span>As a musician, I know what it takes to bend the rules creatively.</span>
-                </div>
-                <div>
+            <div id="aboutMe">
+                <h1>About Me</h1>
+                <img id="profilePic" src="images/profilePic.jpg" alt="Lane Garner profile picture">
+                <!-- <i class="fas fa-pause-circle"></i> -->
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <i class="fas fa-asterisk"></i>
+                <!-- <i class="fas fa-dog"></i>                 -->
+                <p>I am a musician and web develpment student currently attending the fullstack bootcamp at <a href="https://austincodingacademy.com/">Austin Coding Academy</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias voluptate dolore explicabo quam eos veniam, animi aliquid quasi nihil voluptatibus quisquam repellendus dolorem, nostrum consequatur mollitia illum laudantium laboriosam.</p>
+            </div>
+            <div class="card-stack">
+                <div class="card">
                     <h2>Fullstack</h2>
                     <i class="fas fa-code"></i>
-                    <span>I am learning every step of the process; from frontend to backend through deploying a functional website.</span>
+                    <p>I am learning every step of the process; from frontend to backend&mdash;through to deploying a functional website.</p>
                 </div>
-                <div>
+                <div class="card">
+                    <h2>Creative</h2>
+                    <i class="fas fa-guitar"></i>
+                    <p>As a musician, I know what it takes to bend the rules creatively.</p>
+                </div>
+                <div class="card">
                     <h2>Design-oriented</h2>
                     <i class="fas fa-pencil-ruler"></i>
-                    <span>My definition of fullstack includes a certain level of design skills and aesthetic sensibilities.</span>
+                    <p>My definition of fullstack includes a certain level of design skills and aesthetic sensibilities.</p>
                 </div>
-                <div>
+                <div class="card">
                     <h2>Modern & dynamic</h2>
                     <i class="fas fa-mobile-alt"></i>
-                    <span>I have a passion for clean interfaces that utilize responsive & dynamic design for the ultimate</span>
+                    <p>I have a passion for clean interfaces that utilize responsive & dynamic design for the ultimate user experience.</p>
                 </div>
-            </section>
-            <section>
-                <h1>My websites are:</h1>
-                <ul class="no-bullet">
-                    <li><i class="fas fa-check-square"></i> dynamic</li>
+            </div>
+        </section>
+        <section class="checklist">
+            <h1>My websites are:</h1>
+            <ul class="no-bullet">
+                <div>
+                    <!-- <li><i class="fas fa-check-square"></i> dynamic</li> -->
                     <li><i class="fas fa-check-square"></i> minimalist</li>
-                    <li><i class="fas fa-check-square"></i> modern</li>
+                    <!-- <li><i class="fas fa-check-square"></i> modern</li> -->
                     <li><i class="fas fa-check-square"></i> sleek</li>
                     <li><i class="fas fa-check-square"></i> clean</li>
+                </div>
+                <div>
                     <li><i class="fas fa-check-square"></i> smart</li>
                     <li><i class="fas fa-check-square"></i> interactive</li>
-                    <li><i class="fas fa-check-square"></i> clean</li>
                     <li><i class="fas fa-check-square"></i> polished</li>
-                    <li><i class="fas fa-check-square"></i> energy-efficient</li>
+                </div>
+                <div>
+                    <li><i class="fas fa-check-square"></i> efficient</li>
                     <li><i class="fas fa-check-square"></i> interesting</li>
                     <li><i class="fas fa-check-square"></i> explorable</li>
-                </ul>
-            </section>
-            <section>
-                <img src="images/profilePic.jpg" alt="Lane Garner profile picture">
-                <h2>About Me</h2>
-                <i class="fas fa-check-square"></i>
-                <p>Hi, I'm Lane Garner. I am a musician and web develpment student currently attending the fullstack bootcamp at Austin Coding Academy. I am interested in learning about topics such as HTML, CSS, Javascript and eventually the back end as well.</p>
-                <a href="#">Call to action</a>
-                <h3>Skills</h3>
-                <ul class="no-bullet">
-                    <li><i class="fas fa-code"></i> Frontend</li>
-                    <li><i class="fas fa-code"></i> HTML5</li>
-                    <li><i class="fas fa-code"></i> CSS3</li>
-                    <li><i class="fas fa-code"></i> Vanilla JavaScript</li>
-                    <li><i class="fas fa-code"></i> Bootstrap 4</li>
-                    <li><i class="fas fa-code"></i> Adobe XD, InDesign, Illustrator, Photoshop</li>
-                    <li><i class="fas fa-code"></i> Video and audio editing</li>
-                </ul>
-                <h3>Future Skills?</h3>
-                <ul class="no-bullet">
-                    <li><i class="fas fa-code"></i> Backend</li>
-                    <li><i class="fas fa-code"></i> React</li>
-                    <li><i class="fas fa-code"></i> React Native</li>
-                    <li><i class="fas fa-code"></i> JQuery?</li>
-                    <li><i class="fas fa-code"></i> SQL</li>
-                    <li><i class="fas fa-code"></i> mySQL</li>
-                    <li><i class="fas fa-code"></i> Express.js</li>
-                    <li><i class="fas fa-code"></i> Node.js</li>
-                    <li><i class="fas fa-code"></i> Redux</li>
-                    <li><i class="fas fa-code"></i> Webpack/babel</li>
-                    <li><i class="fas fa-code"></i> Client-side routing</li>
-                    <li><i class="fas fa-code"></i> Angular</li>
-                    <li><i class="fas fa-code"></i> Sketch</li>
-                    <li><i class="fas fa-code"></i> Python?</li>
-                    <li><i class="fas fa-code"></i> Swift</li>
-                    <li><i class="fas fa-code"></i> Material UI</li>
-                    <li><i class="fas fa-code"></i> Sass</li>
-                    <li><i class="fas fa-code"></i> Less</li>
-                </ul>
-            </section>
+                </div>
+            </ul>
         </section>
         <section id="portfolio">
-            <h1>Portfolio</h1>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>Beard People Barber</figcaption>
-                </a>
-            </figure>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>Garner Guitar</figcaption>
-                </a>
-            </figure>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>AustinTexasGuitarLessons.com</figcaption>
-                </a>
-            </figure>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>MyOnlineGuitarLessons.com</figcaption>
-                </a>
-            </figure>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>LaneGarner.com</figcaption>
-                </a>
-            </figure>
-            <figure class="card">
-                <a href="#">
-                    <img class="card-image" src="images/gradient.png" alt="">
-                    <figcaption>WoodenRobots.com</figcaption>
-                </a>
-            </figure>
-            <a href="#">View More...</a>
+            <h1 class="flex">Portfolio</h1>
+            <hr class="pad">
+            <div class="flex">
+                <figure class="card">
+                    <a href="https://lanegarner.github.io/barbershopSite/" target="_blank">
+                        <img class="card-image" src="images/beard-people-screen-shot.png" alt="Beard People Barber site screen shot">
+                        <figcaption>Beard People Barber</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                    <a href="">
+                        <img class="card-image" src="images/GarnerGuitarScreenShot.png" alt="Garner Guitar site screen shot">
+                        <figcaption>Garner Guitar</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                    <a href="http://austintexasguitarlessons.com/">
+                        <img class="card-image" src="images/atx-guitar-lessons-screenshot.png" alt="">
+                        <figcaption>AustinTexasGuitarLessons.com</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                    <a href="#">
+                        <img class="card-image" src="images/gradient.png" alt="">
+                        <figcaption>LaneGarner.com</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                    <a href="#">
+                        <img class="card-image" src="images/gradient.png" alt="">
+                        <figcaption>WoodenRobots.com</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <a href="#" class="flex">View More...</a>
+        </section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul class="no-bullet">
+                <li><i class="fas fa-code"></i> Frontend</li>
+                <hr>
+                <li><i class="fas fa-code"></i> HTML5</li>
+                <hr>
+                <li><i class="fas fa-code"></i> CSS3</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Bootstrap 4</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Vanilla JavaScript</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Adobe XD, InDesign, Illustrator, Photoshop</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Video and audio editing</li>
+                <hr>
+            </ul>
+            <h3>Future Skills</h3>
+            <ul class="no-bullet">
+                <li><i class="fas fa-code"></i> Backend</li>
+                <hr>
+                <li><i class="fas fa-code"></i> React</li>
+                <hr>
+                <li><i class="fas fa-code"></i> React Native</li>
+                <hr>
+                <li><i class="fas fa-code"></i> JQuery?</li>
+                <hr>
+                <li><i class="fas fa-code"></i> SQL</li>
+                <hr>
+                <li><i class="fas fa-code"></i> mySQL</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Express.js</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Node.js</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Redux</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Webpack/babel</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Client-side routing</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Angular</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Sketch</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Python?</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Swift</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Material UI</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Sass</li>
+                <hr>
+                <li><i class="fas fa-code"></i> Less</li>
+                <hr>
+            </ul>
         </section>
         <section id="blog">
             <h1>Blog</h1>
@@ -182,11 +211,11 @@
             <h1>Contact</h1>
             <i class="fas fa-envelope"></i>
             <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
-                <label for="comments">Comments</label>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email"><br>
+                <label for="comments">Comments</label><br>
                 <textarea name="" id="comments" cols="30" rows="10" placeholder="Leave comments here"></textarea><br>
                 <input type="submit">
             </form>
