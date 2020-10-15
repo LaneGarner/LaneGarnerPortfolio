@@ -5,6 +5,7 @@ ALL
 * {
     font-family: ‘Raleway’, sans-serif;
     color: #333;
+    --myTurq: #83e7cb;
 }
 
 body {
@@ -12,31 +13,92 @@ body {
     /* width: 100vw; */
 }
 
-/* 
-#HERO 
-*/
+/* #HERO */
 
 #hero {
-    height: 110vh;
-    width: 100vw;
     background: rgb(51,51,51);
     background: linear-gradient(344deg, rgba(51,51,51,1) 0%, rgba(85,85,85,1) 24%, rgba(136,136,136,1) 100%);
-    /* background: url('images/gradient.png') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: fixed; */
+    width: 100vw;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr) .2fr repeat(2, 1fr);
+    grid-row-gap: 12px;
 }
 
 #curly {
     font-size: 9em;
+    color: #333;
+    text-shadow: 2px 2px var(--myTurq);
+}
+
+.grid-div-1 { 
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: center;
+    text-align: center;
+}
+
+.grid-div-2 {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: center;
+    text-align: center;
+}
+
+.grid-div-3 {
+    grid-area: 5 / 2 / 6 / 3;
+    /* grid-area: 4 / 2 / 5 / 3; */
+    justify-self: center;
 }
 
 #hero h1, #hero p {
     color: white;
 }
 
-#hero span:nth-of-type(1) {
-    color: #333;
+#hero h1 {
+    font-size: 40px;
+}
+
+#name {
+    color: var(--myTurq);
+    text-shadow: 2px 2px #333;
+
+}
+
+#hero p:nth-of-type(1) {
+    font-weight: 100;
+    font-size: 26px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px #333;
+
+}
+
+#hero p:nth-of-type(2) {
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    padding-bottom: 50px;
+    border-bottom: dotted 3px #333;
+}
+
+.button {
+    background: transparent;
+    border: solid 3px var(--myTurq);
+    color: var(--myTurq);
+    height: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* .button i, button a {
+    color: #0BC2C9;
+} */
+
+.button:hover {
+    background: white;
+    border: white;
 }
 
 .flex {
@@ -76,6 +138,10 @@ header a {
     text-transform: uppercase;
 }
 
+header a:hover {
+    color: red;
+}
+
 .no-bullet ul {
     padding-left: 0;
 }
@@ -99,9 +165,9 @@ header a {
      padding-top: 20px;
 }
 
-#aboutMe {
-    /* height: 100vh; */
-}
+/* #aboutMe {
+    height: 100vh;
+} */
 
 #aboutMe p {
     margin-top: 50px;
@@ -110,7 +176,7 @@ header a {
 #about h1 {
     font-size: 49px;
     font-weight: 900;
-    margin: 0px auto 0 auto;
+    margin: 0px auto 12px 12px;
     padding-top: 20px;
     padding-bottom: 0;
     padding-left: 1px;
@@ -126,7 +192,7 @@ header a {
 }
 
 #profilePic {
-    width: 300px;
+    width: 500px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     /* border-radius: 500px; */
 }
