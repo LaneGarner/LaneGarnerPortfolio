@@ -29,7 +29,8 @@ body {
 #curly {
     font-size: 9em;
     color: #333;
-    text-shadow: 2px 2px var(--myTurq);
+    text-shadow: 2px 2px white;
+    animation-delay: 400ms;
 }
 
 .grid-div-1 { 
@@ -64,20 +65,21 @@ body {
 
 }
 
-#hero p:nth-of-type(1) {
+#i-make {
     font-weight: 100;
     font-size: 26px;
     padding-bottom: 30px;
     text-shadow: 2px 2px #333;
-
+    animation-delay: 500ms;
 }
 
-#hero p:nth-of-type(2) {
+#my-work {
     font-size: 20px;
     font-style: italic;
     color: white;
     padding-bottom: 50px;
     border-bottom: dotted 3px #333;
+    animation-delay: 1.8s;
 }
 
 .button {
@@ -87,7 +89,7 @@ body {
     height: 30px;
     padding: 20px;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -165,9 +167,9 @@ header a:hover {
      padding-top: 20px;
 }
 
-/* #aboutMe {
+#aboutMe {
     height: 100vh;
-} */
+}
 
 #aboutMe p {
     margin-top: 50px;
@@ -194,7 +196,7 @@ header a:hover {
 #profilePic {
     width: 500px;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    /* border-radius: 500px; */
+    animation-delay: 500ms;
 }
 
 #about i {

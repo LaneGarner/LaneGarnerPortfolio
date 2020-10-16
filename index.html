@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+<!--     
+    class="aniview" data-av-animation="zoomIn"
+ -->
+
+ 
+
     <link href="https://fonts.googleapis.com/css2? family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,100;1,200;1,400;1,60 0;1,700;1,800&display=swap" rel=“stylesheet”>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.compat.css"/>    
@@ -15,21 +21,20 @@
 </head>
 <body>
     <!-- <canvas> -->
-    <!-- <div id="hero-grid"> -->
+    <!-- <div> -->
         <section id="hero">
             <div class="grid-div-1">
-                <span id="curly">{ }</span>
-                <h1>Hello, I'm <span><span id="name">Lane Garner</span>.</span></h1>
+                <span id="curly" class="aniview" data-av-animation="fadeIn">{ }</span>
+                <h1 class="aniview" data-av-animation="zoomIn">Hello, I'm <span><span id="name">Lane Garner</span>.</span></h1>
             </div>
             <div class="grid-div-2">
-                <p>I’m studying to become a fullstack web developer.</p> 
-                <p>Scroll down to view some of my work:</p>
+                <p id="i-make" class="aniview" data-av-animation="bounceInRight">I make websites.</p> 
+                <!-- <p>I’m studying to become a fullstack web developer.</p>  -->
+                <p id="my-work" class="aniview" data-av-animation="fadeIn">Scroll down to view some of my work:</p>
             </div>
-            
             <div class="grid-div-3">
                 <a href="learn.html" class="button"><i class="fas fa-graduation-cap"></i> Learn with me</a>
             </div>
-
         </section>
     <!-- </div> -->
     <!-- </canvas> -->
@@ -49,33 +54,33 @@
         </nav>
     </header>
     <main>
-        <section class="aniview" data-av-animation="slideInRight" id="about">
+        <section id="about">
             <div id="aboutMe">
-                <h1 class="headline">About Me</h1>
-                <img id="profilePic" src="images/profilePic.jpg" alt="Lane Garner profile picture">
+                <h1 class="headline aniview" data-av-animation="slideInUp">About Me</h1>
+                <img id="profilePic" src="images/profilePic.jpg" alt="Lane Garner profile picture" class="aniview" data-av-animation="slideInLeft" --animate-duration: 2s;>
                 <!-- <i class="fas fa-pause-circle"></i> -->
                 <!-- <i class="fas fa-chevron-right"></i> -->
-                <i class="fas fa-asterisk"></i>
+                <!-- <i class="fas fa-asterisk"></i> -->
                 <!-- <i class="fas fa-dog"></i>                 -->
-                <p>I am a musician and web develpment student currently attending the fullstack bootcamp at <a href="https://austincodingacademy.com/">Austin Coding Academy</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias voluptate dolore explicabo quam eos veniam, animi aliquid quasi nihil voluptatibus quisquam repellendus dolorem, nostrum consequatur mollitia illum laudantium laboriosam.</p>
+                <p class="aniview" data-av-animation="slideInUp">I am a musician and web develpment student currently attending the fullstack bootcamp at <a href="https://austincodingacademy.com/">Austin Coding Academy</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias voluptate dolore explicabo quam eos veniam, animi aliquid quasi nihil voluptatibus quisquam repellendus dolorem, nostrum consequatur mollitia illum laudantium laboriosam.</p>
             </div>
             <div class="card-stack">
-                <div class="card">
+                <div class="card aniview" data-av-animation="zoomIn">
                     <h2>Fullstack</h2>
                     <i class="fas fa-code"></i>
                     <p>I am learning every step of the process; from frontend to backend&mdash;through to deploying a functional website.</p>
                 </div>
-                <div class="card">
+                <div class="card aniview" data-av-animation="zoomIn">
                     <h2>Creative</h2>
                     <i class="fas fa-guitar"></i>
                     <p>As a musician, I know what it takes to bend the rules creatively.</p>
                 </div>
-                <div class="card">
+                <div class="card aniview" data-av-animation="zoomIn">
                     <h2>Design-oriented</h2>
                     <i class="fas fa-pencil-ruler"></i>
                     <p>My definition of fullstack includes a certain level of design skills and aesthetic sensibilities.</p>
                 </div>
-                <div class="card">
+                <div class="card aniview" data-av-animation="zoomIn">
                     <h2>Modern & dynamic</h2>
                     <i class="fas fa-mobile-alt"></i>
                     <p>I have a passion for clean interfaces that utilize responsive & dynamic design for the ultimate user experience.</p>
@@ -83,7 +88,7 @@
             </div>
         </section>
         <section class="checklist aniview" data-av-animation="slideInRight">
-            <h1>My websites are:</h1>
+            <h1 >My websites are:</h1>
             <ul class="no-bullet">
                 <div>
                     <!-- <li><i class="fas fa-check-square"></i> dynamic</li> -->
@@ -105,34 +110,34 @@
             </ul>
         </section>
         <section id="portfolio">
-            <h1 class="flex">Portfolio</h1>
-            <hr class="pad">
+            <h1 class="flex aniview" data-av-animation="zoomIn">Portfolio</h1>
+            <hr class="pad aniview" data-av-animation="rotateInUpLeft">
             <div class="flex">
-                <figure class="card">
+                <figure class="card aniview" data-av-animation="backInUp">
                     <a href="https://lanegarner.github.io/barbershopSite/" target="_blank">
                         <img class="card-image" src="images/beard-people-screen-shot.png" alt="Beard People Barber site screen shot">
                         <figcaption>Beard People Barber</figcaption>
                     </a>
                 </figure>
-                <figure class="card">
+                <figure class="card aniview" data-av-animation="backInUp">
                     <a href="">
                         <img class="card-image" src="images/GarnerGuitarScreenShot.png" alt="Garner Guitar site screen shot">
                         <figcaption>Garner Guitar</figcaption>
                     </a>
                 </figure>
-                <figure class="card">
+                <figure class="card aniview" data-av-animation="backInUp">
                     <a href="http://austintexasguitarlessons.com/">
                         <img class="card-image" src="images/atx-guitar-lessons-screenshot.png" alt="">
                         <figcaption>AustinTexasGuitarLessons.com</figcaption>
                     </a>
                 </figure>
-                <figure class="card">
+                <figure class="card aniview" data-av-animation="backInUp">
                     <a href="#">
                         <img class="card-image" src="images/gradient.png" alt="">
                         <figcaption>LaneGarner.com</figcaption>
                     </a>
                 </figure>
-                <figure class="card">
+                <figure class="card aniview" data-av-animation="backInUp">
                     <a href="#">
                         <img class="card-image" src="images/gradient.png" alt="">
                         <figcaption>WoodenRobots.com</figcaption>
@@ -144,57 +149,103 @@
         <section id="skills">
             <h3>Skills</h3>
             <ul class="no-bullet">
-                <li><i class="fas fa-code"></i> Frontend</li>
-                <hr>
-                <li><i class="fas fa-code"></i> HTML5</li>
-                <hr>
-                <li><i class="fas fa-code"></i> CSS3</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Bootstrap 4</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Vanilla JavaScript</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Adobe XD, InDesign, Illustrator, Photoshop</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Video and audio editing</li>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Frontend</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> HTML5</li>
+                    <hr class="aniview" data-av-animation="rotateInUpRight">
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> CSS3</li>
+                    <hr class="aniview" data-av-animation="rotateInUpLeft">
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Bootstrap 4</li>
+                    <hr class="aniview" data-av-animation="rotateInUpRight">
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Vanilla JavaScript</li>
+                    <hr class="aniview" data-av-animation="rotateInUpLeft">
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Adobe XD, InDesign, Illustrator, Photoshop</li>
+                    <hr class="aniview" data-av-animation="rotateInUpRight">
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Video and audio editing</li>
+                </div>
             </ul>
             <h3>Future Skills</h3>
             <ul class="no-bullet">
-                <li><i class="fas fa-code"></i> Backend</li>
-                <hr>
-                <li><i class="fas fa-code"></i> React</li>
-                <hr>
-                <li><i class="fas fa-code"></i> React Native</li>
-                <hr>
-                <li><i class="fas fa-code"></i> JQuery?</li>
-                <hr>
-                <li><i class="fas fa-code"></i> SQL</li>
-                <hr>
-                <li><i class="fas fa-code"></i> mySQL</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Express.js</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Node.js</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Redux</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Webpack/babel</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Client-side routing</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Angular</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Sketch</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Python?</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Swift</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Material UI</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Sass</li>
-                <hr>
-                <li><i class="fas fa-code"></i> Less</li>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Backend</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> React</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> React Native</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> JQuery?</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> SQL</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> mySQL</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Express.js</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Redux</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Webpack/babel</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Client-side routing</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Angular</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Sketch</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Python?</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Swift</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Material UI</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpLeft">
+                    <li><i class="fas fa-code"></i> Sass</li>
+                    <hr>
+                </div>
+                <div class="aniview" data-av-animation="rotateInUpRight">
+                    <li><i class="fas fa-code"></i> Less</li>
+                </div>
             </ul>
         </section>
         <section id="blog">

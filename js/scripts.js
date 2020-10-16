@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    $('.aniview').AniView();
-});
+// $(document).ready(function(){
+//     $('.aniview').AniView();
+// });
