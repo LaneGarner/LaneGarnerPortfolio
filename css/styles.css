@@ -192,10 +192,13 @@ header a:hover {
     /* padding-left: 0; */
 }
 
+#veggie-burger {
+    display: none;
+}
+
 #veggie-open, #veggie-closed {
     color: white;
     font-size: 2em;
-    display: none;
 }
 
 /* #ABOUT */
@@ -606,4 +609,24 @@ footer a {
 
 #copyright {
     font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        height: 100%;
+    }
+    #veggie-burger {
+        display: block;
+    }
+    #veggie-open {
+        display: none;
+    }
+    #nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
 }
