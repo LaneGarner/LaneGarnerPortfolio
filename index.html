@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/animate.compat.css"/>    
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/jquery.aniview.js"></script>   
+    <script src="js/jquery.aniview.js"></script>
     <script src="js/scripts.js"></script>
     <title>Lane Garner - Web Developer</title>
 </head>
@@ -30,8 +30,7 @@
             </div>
             <div class="grid-div-2">
                 <p id="i-make" class="aniview" data-av-animation="fadeInUp">I make websites.</p> 
-                <!-- <p>I’m studying to become a fullstack web developer.</p>  -->
-                <a href="#nav"><p id="my-work" class="aniview" data-av-animation="fadeIn">Scroll down to see my work <i class="fas fa-arrow-down"></i></p>
+                <a href="#navbar"><p id="my-work" class="aniview" data-av-animation="fadeIn">Scroll down to see my work <i class="fas fa-arrow-down"></i></p>
             </div>
             <div class="grid-div-3">
                 <a href="learn.html" class="button">Learn with me</a>
@@ -39,29 +38,40 @@
         </section>
     <!-- </div> -->
     <!-- </canvas> -->
-    <header>
-        <div">
-            <!-- <img id="logo" src="images/logo.svg" alt="Lane Garner Web Dev Logo"> -->
-        </div>
+    <header id="navbar">
         <div id="veggie-burger">
             <i id="veggie-closed" class="fas fa-angle-down"></i>
             <i id="veggie-open" class="fas fa-angle-double-down"></i>        
         </div>
-        <nav id="nav">
+        <nav id="navbar">
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <main>
+    
+    
+    <!-- <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div> -->
+    
+    
+    <main class="content">
         <section id="about">
             <div id="aboutMe">
-                <h1 class="section-heading">About Me</h1>
-                <div>
-                    <img id="profilePic" src="images/profilePic.jpg" alt="Lane Garner profile picture" class="aniview" data-av-animation="slideInLeft" --animate-duration: 2s;>
+                <div class="aboutMeLeft">
+                    <h1 class="section-heading">About Me</h1>
+                    <div>
+                        <img id="profilePic" src="images/profilePic.jpg" alt="Lane Garner profile picture" class="aniview" data-av-animation="slideInLeft" --animate-duration: 2s;>
+                    </div>
                 </div>
-                <p>I am a musician and web develpment student currently attending the fullstack bootcamp at <a href="https://austincodingacademy.com/">Austin Coding Academy</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias voluptate dolore explicabo quam eos veniam, animi aliquid quasi nihil voluptatibus quisquam repellendus dolorem, nostrum consequatur mollitia illum laudantium laboriosam.</p>
+                <div id="about-p" class="aboutMeRight">
+                    <p >I am a musician and web develpment student currently attending the fullstack bootcamp at <a href="https://austincodingacademy.com/">Austin Coding Academy</a>.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias voluptate dolore explicabo quam eos veniam, animi aliquid quasi nihil voluptatibus quisquam repellendus dolorem, nostrum consequatur mollitia illum laudantium laboriosam.</p>
+                </div>
             </div>
             <div class="card-stack">
                 <div class="card aniview" data-av-animation="zoomIn">
@@ -121,7 +131,7 @@
                     </a>
                 </figure>
                 <figure class="card aniview" data-av-animation="zoomIn">
-                    <a href="">
+                    <a href="https://lanegarner.github.io/GarnerGuitar/">
                         <img class="card-image" src="images/GarnerGuitarScreenShot.png" alt="Garner Guitar site screen shot">
                         <figcaption>Garner Guitar</figcaption>
                     </a>
@@ -267,25 +277,27 @@
         <section id="blog">
             <h1 class="flex section-heading">Blog</h1>
             <div class="blog-content">
-                <div class="blog-card-margin">
+                <div>
                     <a href="https://medium.com/@lanegarner/a-perceptual-shift-b43f3dadf76a" target="_blank">
                         <div class="card aniview" data-av-animation="zoomIn">
                             <img class="card-image" src="https://miro.medium.com/max/1400/0*fe6g640h7u9xy4hu" alt="">
                             <h2>A perceptual shift</h2>
                             <h3>The way I think is changing…</h3>
                             <span><em>October 11, 2020</em></span>
+                            <hr class="blog-hr">
                             <p>I am currently spending most of my waking hours at my laptop trying to learn how to code. HTML and CSS are making more sense to me than ever and I’m even starting to wrap my head around some JavaScript concepts. This intense focus has started to change the way I see the world. When I interact with applications, all I can think about is the design. “Check out that border-radius” and “what a beautiful gradient” are thoughts that consistently come to mind as of late. This new way of thinking has even extended beyond tech items and I’m beginning to think like a developer and a designer in everyday life.</p>
                             <div class="blog-button">Read More</div>
                         </div>
                     </a>
                 </div>
-                <div class="blog-card-margin">
+                <div>
                     <a href="https://medium.com/@lanegarner/my-coding-journey-so-far-8789c011af67" target="_blank">
                         <div class="card aniview" data-av-animation="zoomIn">
                             <img class="card-image" src="https://miro.medium.com/max/1400/0*jYLWIDpNAZ815diH" alt="">
                             <h2>My coding journey</h2>
                             <h3>(So far)</h3>
                             <span><em>September 20, 2020</em></span>
+                            <hr class="blog-hr">
                             <p>The thing that excites me most about coding is the ability to build something from a blank screen. Once I have an idea, I can make it a reality (even if it requires a bit of googling to get there). The more I learn on this journey, the more I come to understand how vast a topic coding and programming really can be. This unfamiliarity is exciting to me and has encouraged me to dive deeper and deeper into HTML, CSS, and JavaScript to learn as much as I can about these topics. After many years of creating websites using builders such as WordPress, learning the code under the hood is not only fascina...</p>
                             <div class="blog-button">Read More</div>
                         </div>
@@ -298,25 +310,27 @@
                 </div> -->
     
 
-                <div class="blog-card-margin">
+                <div>
                     <a href="https://medium.com/@lanegarner/" target="_blank">
                         <div class="card aniview" data-av-animation="zoomIn">
                             <img class="card-image" src="images/gradient.png" alt="">
                             <h2>Post title</h2>
                             <h3>Subtitle</h3>
                             <span>Date</span>
+                            <hr class="blog-hr">
                             <p>Description</p>
                             <div class="blog-button">Read More</div>
                         </div>
                     </a>
                 </div>
-                <div class="blog-card-margin">
+                <div>
                     <a href="https://medium.com/@lanegarner/" target="_blank">
                         <div class="card aniview" data-av-animation="zoomIn">
                             <img class="card-image" src="images/gradient.png" alt="">
                             <h2>Post title</h2>
                             <h3>Subtitle</h3>
                             <span>Date</span>
+                            <hr class="blog-hr">
                             <p>Description</p>
                             <div class="blog-button">Read More</div>
                         </div>
@@ -362,7 +376,7 @@
             </div> -->
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section id="copyright">
             <span>Copyright &copy; 2020 Lane Garner. All Rights Reserved.</span>
         </section>
@@ -370,5 +384,55 @@
             <a href="#hero">to top <i class="fas fa-arrow-up"></i></a>
         </section>
     </footer>
+    <!-- <div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione placeat! Blanditiis nam quibusdam totam culpa nisi consectetur cumque alias quae fuga reiciendis! Quisquam quidem porro omnis repudiandae! Incidunt, voluptate.</div>
+    </div> -->
 </body>
 </html>

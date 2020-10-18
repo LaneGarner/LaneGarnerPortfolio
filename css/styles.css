@@ -6,7 +6,7 @@ ALL
     font-family: ‘Raleway’, sans-serif;
     color: #333;
     --primaryColor:#FF851B;
-    --secondaryColor: #5C9852;
+    /* --secondaryColor: #5C9852; */
     --secondaryColor: #357F83;
     --yellow: #E7D05A;
     --blue: #357F83;
@@ -46,6 +46,9 @@ img {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(3, 1fr) .2fr repeat(2, 1fr);
     grid-row-gap: 12px;
+    position: relative;
+    z-index: 3;
+    /* position: absolute; */
 }
 
 #curly {
@@ -85,14 +88,14 @@ img {
 }
 
 #myName {
-    color: var(--primaryColor);
+    color: var(--yellow);
     text-shadow: 2px 2px #333;
     /* font-family: var(--headlineFont); */
     font-size: 50px;
 }
 
 #myName:hover {
-    color: var(--yellow);
+    color: var(--primaryColor);
 }
 
 #i-make {
@@ -157,6 +160,11 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: -webkit-sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 header a {
@@ -171,6 +179,8 @@ header a {
 header a:hover {
     color: var(--primaryColor);
 }
+
+
 
 .no-bullet ul {
     padding-left: 0;
@@ -190,8 +200,23 @@ header a:hover {
 
 /* #ABOUT */
 
-#about {
-     padding-top: 20px;
+#about, #portfolio, #blog, #contact {
+    padding-top: 60px;
+}
+
+#aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+}
+
+#aboutMeLeft {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#aboutMeRight {
+    grid-area: 1 / 2 / 3 / 3;
 }
 
 #aboutMe p {
@@ -202,15 +227,16 @@ header a:hover {
     font-family: var(--headlineFont);
     font-size: 65px;
     font-weight: 100;
-    margin: 0px auto 12px 12px;
+    margin: auto auto 12px 12px;
     padding-top: 20px;
     padding-bottom: 0;
     padding-left: 1px;
 }
 
-#about p {
-    width: 60%;
-    text-align: justify;
+#about-p {
+    padding-top: 60px;
+    width: 80%;
+    text-align: left;
     font-size: 18px;
     padding-left: 8px;
     font-weight: 100;
@@ -338,6 +364,7 @@ header a:hover {
 
  #blog {
     background: var(--bckgrndGrey);
+    padding-bottom: 60px;
  }
 
  #blog h2 {
@@ -355,13 +382,6 @@ header a:hover {
 
  #blog a {
      text-decoration: none;
-     display: flex;
-     justify-content: space-between;
-     /* align-items: flex-end; */
- }
-
- .blog-card-margin {
-     margin: auto 70px 30px auto;
  }
 
  #blog .pad {
@@ -370,17 +390,33 @@ header a:hover {
     background-size: cover;
 }
 
+#blog .card img {
+    height: 200px;
+    padding-top: 20px;
+}
+
 #blog .card {
-    margin: 30px 80px;
+    margin: 30px auto;
     background: white;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 500px;
+}
+
+#blog h3 {
+    margin-top: 5px;
+}
+
+.blog-hr {
+    width: 80%;
+    color: var(--bckgrndGrey);
 }
 
 .blog-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card p {
@@ -445,7 +481,7 @@ header a:hover {
 }
 
 #social i:hover {
-    color: var(--primaryColor)
+    color: var(--secondaryColor)
 }
 
 #social h1 {
@@ -470,6 +506,7 @@ footer h1, footer a, footer i, footer span {
     justify-content: flex-start;
     background: #333;
     display: flex;
+    padding-bottom: 40px;
 }
 
 #contact-icon {
@@ -550,6 +587,13 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    position: sticky;
+    /* bottom: 0;  */
+    /* width: 100%; */
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
 }
 
 footer a {
@@ -561,5 +605,5 @@ footer a {
 }
 
 #copyright {
-    font-size: 14px;
+    font-size: 15px;
 }
