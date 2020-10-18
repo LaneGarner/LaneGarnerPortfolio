@@ -20,7 +20,6 @@ ALL
 
 body {
     margin: 0;
-    width: 100vw;
 }
 
 .transparent {
@@ -57,7 +56,7 @@ img {
 }
 
 #curly:hover {
-    text-shadow: 2px 2px var(--yellow);
+    text-shadow: 2px 2px var(--primaryColor);
 }
 
 .grid-div-1 { 
@@ -86,10 +85,14 @@ img {
 }
 
 #myName {
-    color: var(--yellow);
+    color: var(--primaryColor);
     text-shadow: 2px 2px #333;
-    font-family: var(--headlineFont);
+    /* font-family: var(--headlineFont); */
     font-size: 50px;
+}
+
+#myName:hover {
+    color: var(--yellow);
 }
 
 #i-make {
@@ -99,6 +102,10 @@ img {
     text-shadow: 2px 2px #333;
     animation-delay: 500ms;
     border-bottom: dotted 3px #333;
+}
+
+.grid-div-2 a {
+    text-decoration: none;
 }
 
 #my-work {
@@ -515,6 +522,7 @@ footer h1, footer a, footer i, footer span {
     width: initial;
     border-radius: 40px;
     padding: 15px;
+    cursor: pointer;
 }
 
 #contact input::placeholder, #contact textarea::placeholder {
@@ -532,7 +540,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 input:focus, textarea:focus {
-    border: solid 3px red;
     outline: none;
 }
 
