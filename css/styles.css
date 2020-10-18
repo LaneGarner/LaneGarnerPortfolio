@@ -5,7 +5,13 @@ ALL
 * {
     font-family: ‘Raleway’, sans-serif;
     color: #333;
-    --myColor:red;
+    --primaryColor:#FF851B;
+    --secondaryColor: #5C9852;
+    --secondaryColor: #357F83;
+    --yellow: #E7D05A;
+    --blue: #357F83;
+    --green: #5C9852;
+    --purple: #25213F;
     --bckgrndGrey: #f5f5f5;
     --headlineFont: 'Archivo Black', sans-serif;
     --postFont: 'Archivo Black', sans-serif;
@@ -26,7 +32,7 @@ img {
 }
 
 ::selection {
-    background-color: var(--myColor);
+    background-color: var(--yellow);
     color: white;
 }
 
@@ -51,7 +57,7 @@ img {
 }
 
 #curly:hover {
-    text-shadow: 2px 2px var(--myColor);
+    text-shadow: 2px 2px var(--yellow);
 }
 
 .grid-div-1 { 
@@ -80,7 +86,7 @@ img {
 }
 
 #myName {
-    color: var(--myColor);
+    color: var(--yellow);
     text-shadow: 2px 2px #333;
     font-family: var(--headlineFont);
     font-size: 50px;
@@ -105,8 +111,8 @@ img {
 
 .button {
     background: transparent;
-    border: solid 3px var(--myColor);
-    color: var(--myColor);
+    border: solid 4px var(--secondaryColor);
+    color: white;
     height: 30px;
     padding: 20px;
     border-radius: 40px;
@@ -116,9 +122,7 @@ img {
 }
 
 .button:hover {
-    background: var(--myColor);
-    color: white;
-    border: white;
+    background: var(--secondaryColor);
 }
 
 .flex {
@@ -158,7 +162,7 @@ header a {
 }
 
 header a:hover {
-    color: var(--myColor);
+    color: var(--primaryColor);
 }
 
 .no-bullet ul {
@@ -213,6 +217,22 @@ header a:hover {
 
 #about i {
     font-size: 4em;
+    margin: 10px;
+}
+
+#code-icon {
+    color: var(--primaryColor);
+}
+
+#guitar-icon {
+    color: var(--secondaryColor);
+}
+
+#ruler-icon {
+    color: var(--purple);
+}
+#phone-icon {
+    color: var(--green);
 }
 
 .card-stack {
@@ -389,16 +409,17 @@ header a:hover {
 
 .blog-button {
     background: transparent;
-    border: solid 3px var(--myColor);
-    color: var(--myColor);
+    border: solid 3px var(--secondaryColor);
+    color: var(--secondaryColor);
     padding: 10px;
     border-radius: 40px;
     font-size: 16px;
     font-weight: 600;
+    margin: 20px;
 }
 
 .blog-button:hover {
-    background: var(--myColor);
+    background: var(--secondaryColor);
     color: white;
 }
 
@@ -417,11 +438,11 @@ header a:hover {
 }
 
 #social i:hover {
-    color: var(--myColor)
+    color: var(--primaryColor)
 }
 
 #social h1 {
-    color: var(--myColor); 
+    color: var(--primaryColor); 
     font-size: 32px;
 }
 
@@ -451,7 +472,7 @@ footer h1, footer a, footer i, footer span {
 }
 
 #contact h1 {
-    color: var(--myColor);
+    color: var(--yellow);
     font-size: 32px;
 }
 
@@ -488,7 +509,7 @@ footer h1, footer a, footer i, footer span {
 }
 
 #contact input[type="submit"] {
-    background: var(--myColor);
+    background: var(--secondaryColor);
     margin: 20px;
     font-size: 16px;
     width: initial;
@@ -503,7 +524,7 @@ footer h1, footer a, footer i, footer span {
 
 input[type="text"], input[type="email"], textarea {
     font-size: 18px;
-    color: var(--myColor);
+    color: var(--secondaryColor);
 }
 
 input:focus::placeholder, textarea:focus::placeholder {
