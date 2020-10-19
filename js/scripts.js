@@ -1,6 +1,14 @@
-// $(document).ready(function(){
-//     $('.aniview').AniView();
-// });
+$(document).ready(function(){
+    $('.aniview').AniView();
+});
+
+const placeForResults = document.getElementById("results");
+
+new URLSearchParams(window.location.search).forEach((value, name) => {
+  placeForResults.append(`${name} : ${value}`)
+  placeForResults.append(document.createElement("br"))
+})
+
 
 function displayMenu() {
 const veggieBurgerMenu = document.getElementById("nav");

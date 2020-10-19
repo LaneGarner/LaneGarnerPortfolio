@@ -16,3 +16,11 @@ a {
 .back-button i {
     color: white;
 }
+
+.back-button span {
+    color: white;
+}
+
+.back-button:hover {
+    background: var(--secondaryColor);
+}

@@ -560,11 +560,12 @@ footer h1, footer a, footer i, footer span {
     resize: none;
 }
 
-#contact input[type="submit"] {
+#contact button {
     background: var(--secondaryColor);
     margin: 20px;
     font-size: 16px;
     width: initial;
+    border: none;
     border-radius: 40px;
     padding: 15px;
     cursor: pointer;
@@ -578,10 +579,6 @@ footer h1, footer a, footer i, footer span {
 input[type="text"], input[type="email"], textarea {
     font-size: 18px;
     color: var(--secondaryColor);
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-    color: transparent;
 }
 
 input:focus, textarea:focus {

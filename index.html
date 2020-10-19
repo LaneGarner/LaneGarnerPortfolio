@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<!--     
-    class="aniview" data-av-animation="zoomIn"
- -->
-
- 
-
     <link href="https://fonts.googleapis.com/css2? family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,100;1,200;1,400;1,60 0;1,700;1,800&display=swap" rel=“stylesheet”>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -352,23 +345,22 @@
                 <a href="https://www.medium.com/@lanegarner"><i class="fab fa-medium" target="_blank"></i></a>
                 <a href="https://www.dribble.com/lanegarner"><i class="fab fa-dribble-square" target="_blank"></i></a>
             </div>
-        </section>
-
-            
+        </section>      
         <section id="contact">
             <div class="contact-form">
                 <div id="contact-icon flex-heading">
                     <h1 class="section-heading">Contact</h1>
                     <i id="envelope" class="fas fa-envelope"></i>
                 </div>
-                <form action="">
+                <form action="results.html" method="GET">
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" placeholder="Name*"><br>
+                    <input type="text" name="name" id="name" placeholder="Name*" required><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Email*"><br>
+                    <input type="email" name="email" id="email" placeholder="Email*" required><br>
                     <label for="comments">Comments</label><br>
-                    <textarea name="" id="comments" cols="60" rows="10" placeholder="Comments*"></textarea><br>
-                    <input type="submit" value="Submit">
+                    <textarea name="comments" id="comments" cols="60" rows="10" placeholder="Comments*" required></textarea><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </form>
             </div>
             <!-- <div id="contact-icon">
