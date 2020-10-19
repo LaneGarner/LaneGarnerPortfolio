@@ -29,8 +29,8 @@
                 <h1 class="aniview" data-av-animation="zoomIn">Hello, I'm <span><span id="myName">Lane Garner</span>.</span></h1>
             </div>
             <div class="grid-div-2">
-                <p id="i-make" class="aniview" data-av-animation="fadeInUp">I make websites.</p> 
-                <a href="#navbar"><p id="my-work" class="aniview" data-av-animation="fadeIn">Scroll down to see my work <i class="fas fa-arrow-down"></i></p>
+                <p id="i-make" class="aniview" data-av-animation="fadeInUp">I make websites</p> 
+                <a href="#navbar"><p id="my-work" class="aniview" data-av-animation="fadeIn">Scroll down to see my work</p>
             </div>
             <div class="grid-div-3">
                 <a href="learn.html" class="button">Learn with me</a>
@@ -50,7 +50,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-       
+
     <main class="content">
         <section id="about">
             <div id="aboutMe">
@@ -183,6 +183,14 @@
                     </div>
                     <div class="aniview" data-av-animation="rotateInUpLeft">
                         <li><i class="fas fa-code"></i> Video and audio editing</li>
+                        <hr class="aniview" data-av-animation="rotateInUpRight">    
+                    </div>
+                    <div class="aniview" data-av-animation="rotateInUpLeft">
+                        <li><i class="fas fa-code"></i> CSS Grid & Flexbox</li>
+                        <hr class="aniview" data-av-animation="rotateInUpRight">
+                    </div>
+                    <div class="aniview" data-av-animation="rotateInUpLeft">
+                        <li><i class="fas fa-code"></i> Responsive &amp; mobile friendly designs</li>
                     </div>
                 </ul>
             </div>
@@ -259,8 +267,11 @@
                     </div>
                     <div class="aniview" data-av-animation="rotateInUpRight">
                         <li><i class="fas fa-code"></i> Less</li>
+                        <hr>
                     </div>
-                    <div id="myDiv"></div>
+                    <div class="aniview" data-av-animation="rotateInUpLeft">
+                        <li><i class="fas fa-code"></i> Web Audio API</li>
+                    </div>
                 </ul>
             </div>
         </section>
@@ -269,6 +280,19 @@
         <section id="blog">
             <h1 class="flex section-heading">Blog</h1>
             <div class="blog-content">
+                <div>
+                    <a href="https://medium.com/@lanegarner/if-you-know-you-know-27c73222c4e8" target="_blank">
+                        <div class="card aniview" data-av-animation="zoomIn">
+                            <img class="card-image" src="https://miro.medium.com/max/1400/0*rqye64nEMRjQ5Nic" alt="">
+                            <h2>If/when you know, you know.</h2>
+                            <h3>Repetition, Eloquent JavaScript for Kids &amp; Web Audio API</h3>
+                            <span>October 18, 2020</span>
+                            <hr class="blog-hr">
+                            <p>One thing that I’ve found incredibly helpful while learning to code is to approach learning content repeatedly and from multiple angles. The more times I revisit a topic, the better it sticks and I may even find a description of a concept that can be paradigm-shifting. For this very reason, I’m starting to work ahead a bit and have even watched some videos on React. I don’t want a concept to be completely foreign when presented to me for the “first time” in class. Likewise, I’m working through beginner JavaScript material for the nth time and some of it is finally beginning to stick. Earlier this...</p>
+                            <div class="blog-button">Read More</div>
+                        </div>
+                    </a>
+                </div>
                 <div>
                     <a href="https://medium.com/@lanegarner/a-perceptual-shift-b43f3dadf76a" target="_blank">
                         <div class="card aniview" data-av-animation="zoomIn">
@@ -295,42 +319,25 @@
                         </div>
                     </a>
                 </div>
-
+                <div>
+                    <a href="https://medium.com/@lanegarner/" target="_blank">
+                        <div class="card aniview" data-av-animation="zoomIn">
+                            <img class="card-image" src="images/gradient.png" alt="">
+                            <h2>Post title</h2>
+                            <h3>Subtitle</h3>
+                            <span>Date</span>
+                            <hr class="blog-hr">
+                            <p>Description</p>
+                            <div class="blog-button">Read More</div>
+                        </div>
+                    </a>
+                </div>
                 <!-- <div class="view-more">
                     <i id="pulse" class="fas fa-ellipsis-h flex"></i>
                     <a href="#blog" class="flex aniview" data-av-animation="fadeIn">view more</a>
                 </div> -->
-    
-
-                <div>
-                    <a href="https://medium.com/@lanegarner/" target="_blank">
-                        <div class="card aniview" data-av-animation="zoomIn">
-                            <img class="card-image" src="images/gradient.png" alt="">
-                            <h2>Post title</h2>
-                            <h3>Subtitle</h3>
-                            <span>Date</span>
-                            <hr class="blog-hr">
-                            <p>Description</p>
-                            <div class="blog-button">Read More</div>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://medium.com/@lanegarner/" target="_blank">
-                        <div class="card aniview" data-av-animation="zoomIn">
-                            <img class="card-image" src="images/gradient.png" alt="">
-                            <h2>Post title</h2>
-                            <h3>Subtitle</h3>
-                            <span>Date</span>
-                            <hr class="blog-hr">
-                            <p>Description</p>
-                            <div class="blog-button">Read More</div>
-                        </div>
-                    </a>
-                </div>
             </div>
         </section>
-
 
         <section id="social">
             <h1 class="section-heading">Find me online</h1>
@@ -373,7 +380,7 @@
             <span>Copyright &copy; 2020 Lane Garner. All Rights Reserved.</span>
         </section>
         <section id="to-top">
-            <a href="#hero">to top <i class="fas fa-arrow-up"></i></a>
+            <a href="#hero"><i class="fas fa-arrow-up"></i></a>
         </section>
     </footer>
     <!-- <div>
