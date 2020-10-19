@@ -620,7 +620,7 @@ footer a {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     header {
         flex-direction: column;
         height: 100%;
