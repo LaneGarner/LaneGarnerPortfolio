@@ -23,6 +23,11 @@ body {
     overflow-x: hidden;
 }
 
+#main-logo {
+    /* margin-top: 20px; */
+    width: 300px;
+}
+
 .transparent {
     color: transparent;
 }
