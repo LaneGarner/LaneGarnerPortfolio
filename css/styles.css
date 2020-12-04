@@ -24,8 +24,8 @@ body {
 }
 
 #main-logo {
-    /* margin-top: 20px; */
-    width: 300px;
+    margin-top: 15px;
+    width: 20em;
 }
 
 .transparent {
@@ -46,43 +46,12 @@ img {
 #hero {
     background: rgb(51,51,51);
     background: linear-gradient(344deg, rgba(51,51,51,1) 0%, rgba(85,85,85,1) 24%, rgba(136,136,136,1) 100%);
-    /* width: 100vw; */
-    height: 110vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(3, 1fr) .2fr repeat(2, 1fr);
-    grid-row-gap: 12px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     z-index: 3;
-    /* position: absolute; */
-}
-
-#curly {
-    font-size: 9em;
-    color: #333;
-    text-shadow: 2px 2px white;
-    animation-delay: 400ms;
-}
-
-#curly:hover {
-    text-shadow: 2px 2px var(--primaryColor);
-}
-
-.grid-div-1 { 
-    grid-area: 2 / 2 / 3 / 3;
-    justify-self: center;
-    text-align: center;
-}
-
-.grid-div-2 {
-    grid-area: 3 / 2 / 4 / 3;
-    justify-self: center;
-    text-align: center;
-}
-
-.grid-div-3 {
-    grid-area: 5 / 2 / 6 / 3;
-    justify-self: center;
 }
 
 #hero h1, #hero p {
@@ -91,6 +60,11 @@ img {
 
 #hero h1 {
     font-size: 40px;
+    margin-bottom: .5em;
+}
+
+#hero a {
+    text-decoration: none;
 }
 
 #myName {
@@ -105,7 +79,7 @@ img {
 #i-make {
     font-weight: 100;
     font-size: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-shadow: 2px 2px #333;
     animation-delay: 500ms;
     border-bottom: dotted 3px #333;
@@ -118,24 +92,26 @@ img {
 #my-work {
     font-size: 20px;
     font-weight: 100;
+    text-align: center;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     animation-delay: 1.3s;
 }
 
-.button {
+#learn {
     background: transparent;
     border: solid 4px var(--secondaryColor);
     color: white;
     height: 30px;
-    padding: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
     border-radius: 40px;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
 }
 
-.button:hover {
+#learn:hover {
     background: var(--secondaryColor);
 }
 
@@ -371,33 +347,33 @@ header a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
- /* 
+/* 
 #BLOG
  */
 
- #blog {
+#blog {
     background: var(--bckgrndGrey);
     padding-bottom: 60px;
- }
+}
 
- #blog h2 {
-     font-family: var(--postFont);
-     margin-bottom: 0;
- }
+#blog h2 {
+    font-family: var(--postFont);
+    margin-bottom: 0;
+}
 
- #blog h3 {
-     font-weight: 100;
- }
+#blog h3 {
+    font-weight: 100;
+}
 
- #blog span {
-     font-weight: 100;
- }
+#blog span {
+    font-weight: 100;
+}
 
- #blog a {
-     text-decoration: none;
- }
+#blog a {
+    text-decoration: none;
+}
 
- #blog .pad {
+#blog .pad {
     background: #FFF;
     background: url('/images/gradient.png');
     background-size: cover;
