@@ -102,7 +102,7 @@ img {
     background: transparent;
     border: solid 4px var(--secondaryColor);
     color: white;
-    height: 30px;
+    /* height: 30px; */
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 40px;
